@@ -35,7 +35,7 @@ console.log(greet({ name: 'amy' }));
 
 // Your explanation:
 
-for (var i = 0; i < 4; i++) {
+for (let i = 0; i < 4; i++) {
   setTimeout(() => console.log(i), 0);
 }
 
@@ -52,7 +52,7 @@ for (var i = 0; i < 4; i++) {
 
 let dog = {
   name: 'doggo',
-  sayName () {
+  sayName:function() {
     console.log(this.name);
   }
 };
@@ -80,4 +80,4 @@ Dog.bark = function () {
 
 let fido = new Dog('fido');
 
-fido.bark();
+// fido.bark();
